@@ -18,6 +18,8 @@
 # misc
 .DS_Store
 *.pem
+.prettierrc
+review.md
 
 # debug
 npm-debug.log*
