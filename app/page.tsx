@@ -1,5 +1,5 @@
-import Button from '@/components/UI/Button'
-import Wrapper from '@/components/UI/Wrapper'
+import Button from '@/components/Base/Button'
+import Wrapper from '@/components/Base/Wrapper'
 
 export default function Splash() {
   return (

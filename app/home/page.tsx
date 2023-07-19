@@ -1,5 +1,7 @@
-import Card from '@/components/UI/Card'
-import Wrapper from '@/components/UI/Wrapper'
+import Card from '@/components/Base/Card'
+import Wrapper from '@/components/Base/Wrapper'
+import LeagueCard from '@/components/Shared/LeagueCard'
+import MatchCard from '@/components/Shared/MatchCard'
 import Image from 'next/image'
 
 function Home({}: propTypes) {
@@ -28,7 +30,7 @@ function Home({}: propTypes) {
           </div>
         </div>
       </div>
-      <Card className='from-blue-100 from-0% to-[84.11%] to-blue-200 bg-gradient-138 flex justify-between'>
+      <Card className='from-blue-100 from-0% to-[84.11%] my-5 to-blue-200 bg-gradient-138 flex justify-between'>
         <div className=''>
           <p className='bg-white p-2 text-xs rounded-xl max-w-fit text-black-200 font-semibold'>
             Interest
@@ -67,52 +69,8 @@ function Home({}: propTypes) {
       </div>
       <div>
         <div>
-          <div className='flex justify-between items-center'>
-            <div className='flex gap-2'>
-              {/* icon */}
-              <Image
-                src='/images/spain.png'
-                width={24}
-                height={24}
-                alt='spain'
-              />
-              <div>
-                <p className='text-base font-semibold'>La Liga</p>
-                <span className='text-xs text-grey-200'>Spain</span>
-              </div>
-            </div>
-            {/* right */}
-            <Image
-              src='/icons/arrow_right.svg'
-              width={16}
-              height={16}
-              alt='arrow_right'
-            />
-          </div>
-          <Card className='flex gap-5 items-center bg-[#2B2B3D] h-20 relative'>
-            {/* club icons */}
-            <div className='flex gap-1'>
-              <div className='p-3 rounded-full bg-black-100 w-8 h-8'></div>
-              <div className='p-3 rounded-full bg-black-100 w-8 h-8'></div>
-            </div>
-            <div className='flex text-center text-xs gap-1'>
-              <div className=''>
-                <p className='my-2'>Barcelona</p>
-                <p>2</p>
-              </div>
-              <div className=''>
-                <p className='my-2'>vs</p>
-                <p>-</p>
-              </div>
-              <div className=''>
-                <p className='my-2'>Real Madrid</p>
-                <p>0</p>
-              </div>
-            </div>
-            <div className='bg-black-100 h-full absolute right-0 p-4 text-center flex items-center justify-center rounded-r-2xl'>
-              HT
-            </div>
-          </Card>
+          <LeagueCard />
+          <MatchCard />
         </div>
       </div>
     </Wrapper>

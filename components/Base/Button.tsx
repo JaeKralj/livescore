@@ -4,7 +4,7 @@ function Button({ children, type }: propTypes): JSX.Element {
   return (
     <button
       className={clsx(
-        'py-5 px-16 rounded-2xl border-8 border-transparent font-semibold text-lg',
+        'py-5 px-16 rounded-2xl border-8 border-transparent font-semibold text-lg shadow',
         type === 'primary' ? 'bg-blue' : 'bg-transparent'
       )}
     >
